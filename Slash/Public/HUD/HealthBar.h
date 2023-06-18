@@ -15,6 +15,7 @@ class SLASH_API UHealthBar : public UUserWidget
 	GENERATED_BODY()
 	
 public:
+	// 표시될 체력바
 	UPROPERTY(meta = (BindWidget))
 	class UProgressBar* HealthBar;
 };

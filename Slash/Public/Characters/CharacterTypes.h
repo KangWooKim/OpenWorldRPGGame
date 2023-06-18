@@ -1,5 +1,6 @@
 #pragma once
 
+// 캐릭터의 상태를 나타내는 열거형
 UENUM(BlueprintType)
 enum class ECharacterState : uint8
 {
@@ -8,6 +9,7 @@ enum class ECharacterState : uint8
 	ECS_EquippedTwoHandedWeapon UMETA(DisplayName = "Equipped Two-Handed Weapon")
 };
 
+// 캐릭터의 액션 상태를 나타내는 열거형
 UENUM(BlueprintType)
 enum class EActionState : uint8
 {
@@ -19,6 +21,7 @@ enum class EActionState : uint8
 	EAS_Dead UMETA(DisplayName = "Dead")
 };
 
+// 죽음 애니메이션 포즈를 나타내는 열거형
 UENUM(BlueprintType)
 enum EDeathPose
 {
@@ -32,6 +35,7 @@ enum EDeathPose
 	EDP_MAX UMETA(DisplayName = "DefaultMAX")
 };
 
+// 적의 상태를 나타내는 열거형
 UENUM(BlueprintType)
 enum class EEnemyState : uint8
 {

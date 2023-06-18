@@ -15,10 +15,11 @@ class SLASH_API UHealthBarComponent : public UWidgetComponent
 	GENERATED_BODY()
 	
 public:
-
+	// Percent로 HealthBar를 설정합니다.
 	void SetHealthPercent(float Percent);
 
 private:
+	// 화면에 표시될 HealthBarWidget 입니다.
 	UPROPERTY()
 	class UHealthBar* HealthBarWidget;
 };
